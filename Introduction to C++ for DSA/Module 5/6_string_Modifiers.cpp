@@ -13,8 +13,8 @@ int main()
     // s1.assign("Gello");
     // s1.erase(2);
     // s2.erase(3,2);    // 3 number index theke 2 ta character delete korbe
-    // s1.replace(6,5,"Bangladesh");
-    s1.insert(5,"Moshiur");
+    s1.replace(6,5,"Bangladesh");
+    // s1.insert(5,"Moshiur");
     cout << s1 << endl;
     cout << s2 << endl;
     return 0;
