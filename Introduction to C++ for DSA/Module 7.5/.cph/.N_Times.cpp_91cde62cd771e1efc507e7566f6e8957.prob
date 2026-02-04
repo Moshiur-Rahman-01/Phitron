@@ -1,0 +1,1 @@
+{"name":"Local: N_Times","url":"d:\\Software Engineer\\Phitron\\Introduction to C++ for DSA\\Module 7.5\\N_Times.cpp","tests":[{"id":1770192539880,"input":"2\n1 a\n5 z","output":"a \nz z z z z"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Software Engineer\\Phitron\\Introduction to C++ for DSA\\Module 7.5\\N_Times.cpp","group":"local","local":true}
