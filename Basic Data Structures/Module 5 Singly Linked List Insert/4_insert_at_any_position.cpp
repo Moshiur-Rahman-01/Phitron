@@ -12,13 +12,19 @@ public:
     }
 };
 
-void insert_at_head(Node* &head, int val){
-    Node* newNode = new Node(val);
-    newNode->next = head;
-    head = newNode;
+void insert_at_any_position(Node *&head,int idx, int val)
+{
+    Node *newNode = new Node(val);
+    Node* tmp = head;
+    for(int i=1; i<idx; i++){ // O(n)
+        tmp = tmp->next;
+    } // tmp ekhon target index e
+    newNode->next = tmp->next;
+    tmp->next = newNode;
 }
 
-void print_linked_list(Node* head){
+void print_linked_list(Node *head)
+{
     Node *tmp = head;
     while (tmp != NULL)
     {
@@ -35,8 +41,8 @@ int main()
     head->next = a;
     a->next = b;
 
-    insert_at_head(head,100);
-    insert_at_head(head,200);
+    insert_at_any_position(head,2, 100);
+    insert_at_any_position(head, 2, 200);
     print_linked_list(head);
     return 0;
 }

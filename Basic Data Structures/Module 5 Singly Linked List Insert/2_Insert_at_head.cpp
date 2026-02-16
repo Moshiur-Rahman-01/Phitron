@@ -12,15 +12,13 @@ public:
     }
 };
 
-void insert_at_any_position(Node *&head,int idx, int val)
-{
-    Node *newNode = new Node(val);
+void insert_at_head(Node* &head, int val){ // O(1)
+    Node* newNode = new Node(val);
     newNode->next = head;
     head = newNode;
 }
 
-void print_linked_list(Node *head)
-{
+void print_linked_list(Node* head){
     Node *tmp = head;
     while (tmp != NULL)
     {
@@ -37,8 +35,8 @@ int main()
     head->next = a;
     a->next = b;
 
-    insert_at_any_position(head,2, 100);
-    // insert_at_head(head, 200);
+    insert_at_head(head,100);
+    insert_at_head(head,200);
     print_linked_list(head);
     return 0;
 }
